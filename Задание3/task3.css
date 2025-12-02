@@ -161,3 +161,36 @@ body {
     border-top: 10px solid transparent;
 }
 
+/* Стили для сообщений с геолокацией */
+.message-location {
+    background-color: #f0f8ff;
+    border-left: 4px solid #4dabf5;
+}
+
+.location-message {
+    line-height: 1.4;
+}
+
+.location-link {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.location-link:hover {
+    text-decoration: underline;
+}
+
+.message-location .message-time {
+    margin-top: 8px;
+}
+
+/* Адаптивность для кнопки геолокации */
+#locationBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#locationBtn span {
+    font-size: 12px;
+}
